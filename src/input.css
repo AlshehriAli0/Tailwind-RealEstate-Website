@@ -4,6 +4,6 @@
 
 @layer components {
     .aActive {
-        @apply text-green-400 border-green-400 border-b-4 pb-4;
+        @apply text-green-500 border-green-500 border-b-4 pb-4;
     }
 }
