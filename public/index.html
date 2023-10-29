@@ -1,46 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Properties</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <link rel="stylesheet" href="/dist/darkstyles.css">
     <link rel="icon" href="images/house.png" type="image/png">
 </head>
 
 <header>
-    <nav class="bg-white shadow-lg">
+    <nav>
 
-        <div id="nav-container" class="px-7 py-3 flex items-center justify-between">
+        <div id="nav-container" class="md:px-7 px-2 sm:px-3 py-4 flex items-center justify-between">
 
-            <div id="Left-icon" class="flex items-center space-x-2">
-                <img src="images/house.png" alt="logo (House)" class="h-10 w-10">
-                <span class="font-semibold text-gray-600 text-xl">Premium Properties</span>
+            <div id="Left-icon"
+                class="flex items-center space-x-2 animate-duration-[1300ms] animate-fade-down animate-delay-[250ms] animate-ease-out">
+                <img src="images/house.png" alt="logo (House)" style="opacity: 60% !important;"
+                    class=" md:h-10 md:w-10 h-9 opacity-60 animate-fade-down animate-delay-[600ms] animate-ease-out">
+                <span
+                    class="font-semibold text-gray-500 md:text-xl text-xl animate-fade-down  animate-delay-[250ms] animate-ease-out">Premium
+                    Properties</span>
             </div>
-            <div class="flex items-center space-x-4">
-                <div id="Links" class="hidden sm:block space-x-4 text-xl ">
-                    <a href="" class="aActive font-semibold hover:text-green-500 transition duration-450">Home</a>
+
+            <div class="flex items-center space-x-1">
+
+                <div id="Links" class="hidden sm:block space-x-4 text-xl animate-fd animate-delay-[250ms]">
                     <a href=""
-                        class="text-gray-600 font-semibold hover:text-green-500 transition duration-450">Services</a>
+                        class="aActive font-semibold transition hover:text-green-400 duration-300 animate-delay-[250ms] ">Home</a>
                     <a href=""
-                        class="text-gray-600 font-semibold hover:text-green-500 transition duration-450">About</a>
-                    <a href="" class="text-gray-600 font-semibold hover:text-green-500 transition duration-450">Contact
+                        class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[400ms] animate-ease-out">Services</a>
+                    <a href=""
+                        class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[550ms] animate-ease-out">About</a>
+                    <a href=""
+                        class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[750ms] animate-ease-out">Contact
                         Us</a>
                 </div>
-                <button> <img src="./images/232750.png" class="h-9 " alt=""></button>
+                <div id="dropdown-menu-container" class="flex z-10 items-center sm:pl-1">
+                    <div id="dropdown" class="sm:hidden relative animate-delay-[650ms] animate-fd">
+                        <div class="text-left flex items-center pt-1">
+                            <div class="relative inline-block text-left">
+                                <div class="flex items-center">
+                                    <button type="button"
+                                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 p"
+                                        id="menu-button" aria-expanded="false" aria-haspopup="true">
+                                        <img src="" alt="">
+                                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="dropdown-menu"
+                                class=" relative right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10 relative animate-fd"
+                                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                <div class="py-1 " role="none">
+                                    <a href="#"
+                                        class="text-gray-700 justify px-4 py-2 text-lg font-semibold transition active:bg-gray-100 duration-200 rounded-lg mx-auto w-11/12"
+                                        role="menuitem" tabindex="-1" id="menu-item-0">Home</a>
+                                    <hr class="mx-auto  w-3/4">
+                                    <a href="#"
+                                        class="text-gray-700 justify px-4 py-2 text-lg font-semibold text-sm transition active:bg-green-100 duration-200 rounded-lg mx-auto w-11/12"
+                                        role="menuitem" tabindex="-1" id="menu-item-1">Services</a>
+                                    <hr class="mx-auto  w-3/4">
+                                    <a href="#"
+                                        class="text-gray-700 justify px-4 py-2 text-lg font-semibold text-sm transition active:bg-green-100 duration-200 rounded-lg mx-auto w-11/12"
+                                        role="menuitem" tabindex="-1" id="menu-item-2">About</a>
+                                    <hr class="mx-auto  w-3/4">
+                                    <a href="#"
+                                        class="text-gray-700 justify px-4 py-2 text-lg font-semibold text-sm transition active:bg-green-100 duration-200 rounded-lg mx-auto w-11/12"
+                                        role="menuitem" tabindex="-1" id="menu-item-3">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="opacity-60 dark-mode-button" id="darkModeButton"> <img src="./images/232750.png"
+                            class="sm:h-9 h-11 rounded-full transition hover:bg-gray-100 duration-300 animate-fd animate-delay-[600ms]"
+                            alt="Dark mode button">
+                    </button>
+
+                </div>
+
             </div>
-        </div>
     </nav>
 </header>
 
 <body>
 
-    <main id="landing">
+    <main id="landing" class="sm:mt-16 mt-4 px-7 ">
 
+        
+        <div class="text-center">
+
+            <h1 class="font-extrabold text-5xl sm:text-7xl px-12 animate-fu ">
+                <span class="block">Premium Properties</span>
+                <span class="block text-green-400">Find your dream home</span>
+            </h1>
+
+            <p class="mt-5 text-gray-500 px-5 md:text-xl md:px-20 animate-delay-[600ms] animate-fu">
+                Welcome to Premium Properties, your one-stop-shop
+                for
+                finding
+                your
+                dream
+                home. Our website
+                offers a wide
+                range of
+                properties to choose from, whether you're looking for a cozy apartment or a spacious villa. Browse
+                our
+                listings and find your perfect match today!
+            </p>
+
+            <div
+                class="inline-block sm:justify pt-8 w-full transition duration-450 animate-fu animate-delay-[900ms] sm:space-y-0 sm:space-x-4 space-y-4">
+
+                <a href="#article" 
+                    class="aTag justify px-10 text-xl text-green-400 bg-opacity-10 bg-green-400 rounded-md font-semibold transition hover:text-white hover:bg-green-400 duration-300 animate-fu animate-delay-[900ms] h-16 w-full btn-border sm:w-72 ">
+                    View properties
+                </a>
+                <a href="#"
+                    class="justify px-10 rounded-md text-xl font-semibold text-green-400 transition hover:bg-green-400 hover:text-white duration-300 animate-fu animate-delay-[900ms] btn-border h-16 w-full sm:w-72 aTag">
+                    Explore locations
+                </a>
+            </div>
+        </div><hr class="mt-32 mx-auto w-8/12 mb-8 animate-fu animate-delay-[1200ms]">
     </main>
 
+    <section>
+        
+        <div class="pt-8 justify">
+            <h2 class="text-4xl font-semibold text-gray-600 animate-fu animate-delay-[1500ms]">Recent properties</h2>
+        </div>
+
+        <article id="article">
+            <div class="grid grid-cols-1 md:grid-cols-3 p-10 px-4 sm:px-10 gap-9 mt-8 pt-4 parallax-container">
+
+
+                <div id="card1"
+                    class="rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1600ms] animate-duration-[2500ms]">
+                    <img class="w-full" src="images/home1.jpg" alt="Orchid villa photo">
+                    <div class="px-7 py-4 h-52">
+                        <div class="font-bold text-2xl mb-2">Orchid Villa</div>
+                        <p class="text-gray-700"> Located in the suburbs of
+                            california, orchid villa offers
+                            luxury with a modern touch.
+                            Equipped with green lighting
+                            and a rainwater harvesting
+                            system, this property is eco-
+                            friendly.
+                        </p>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span class="text-green-400 font-bold text-lg inline-block">$1,400,000</span>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold mr-2">7
+                            Bedrooms</span>
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold">6
+                            Bathrooms</span>
+                    </div>
+
+                    <div class="px-7 py-4 pb-8">
+                        <button
+                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700">View
+                            Property</button>
+                    </div>
+                </div>
+
+
+
+                <div id="card2"
+                    class="rounded-xl shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1800ms] animate-duration-[2000ms]">
+                    <img class="w-full" src="images/home2.jpg" alt="577 Garcia photo">
+                    <div class="px-7 py-4 h-52">
+                        <div class="font-bold text-2xl mb-2">577 Garcia</div>
+                        <p class="text-gray-700">Nestled in the peaceful and premium neighborhood of 577 Garcia, this
+                            villa offers a harmonious blend of luxury living and
+                            eco-conscious design. Welcome to Garcia Green Villa, where sustainability meets
+                            sophistication.
+                        </p>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span class="text-green-400 font-bold text-lg inline-block">$1,950,000</span>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold mr-2">7
+                            Bedrooms</span>
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold">6
+                            Bathrooms</span>
+                    </div>
+
+                    <div class="px-7 py-4 pb-10">
+                        <button
+                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700">View
+                            Property</button>
+                    </div>
+                </div>
+
+
+
+                <div id="card3"
+                    class="rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[2000ms] animate-duration-[2000ms]">
+                    <img class="w-full" src="images/home3.jpg" alt="Nexa Epitome photo">
+                    <div class="px-7 py-4 h-52">
+                        <div class="font-bold text-2xl mb-2">Nexa Epitome</div>
+                        <p class="text-gray-700">
+                            Welcome to an extraordinary residence that redefines the essence of modern
+                            luxury living. Located in
+                            the heart of a vibrant metropolis, this distinctive property is far more than just a home;
+                            it's a testament to your
+                            unique lifestyle.
+                        </p>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span class="text-green-400 font-bold text-lg inline-block">$1,150,000</span>
+                    </div>
+                    <div class="px-7 py-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold mr-2">6
+                            Bedrooms</span>
+                        <span
+                            class="inline-block bg-gray-200 text-gray-800 text-sm rounded-full py-2 px-3 font-semibold">5
+                            Bathrooms</span>
+                    </div>
+
+                    <div class="px-7 py-4 pb-10">
+                        <button
+                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700">View
+                            Property</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </article>
+
+    </section>
 
 </body>
+<script src="index.js"></script>
 
 </html>

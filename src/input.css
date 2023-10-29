@@ -4,6 +4,39 @@
 
 @layer components {
     .aActive {
-        @apply text-green-500 border-green-500 border-b-4 pb-4;
+        @apply text-green-400 border-green-400 border-b-4 pb-4;
+    }
+
+    .animate-fd {
+        @apply animate-duration-[1300ms];
+        @apply animate-fade-down;
+        @apply animate-ease-out;
+    }
+
+    .card-l {
+        @apply animate-duration-[2000ms];
+        @apply animate-fade-right;
+        @apply animate-ease-out;
+    }
+
+    .card-r {
+        @apply animate-duration-[1300ms];
+        @apply animate-fade-left;
+        @apply animate-ease-out;
+    }
+
+
+    .animate-fu {
+        @apply animate-duration-[1300ms];
+        @apply animate-fade-up;
+        @apply animate-ease-out;
+    }
+
+    .btn-border {
+        @apply border-green-500 border-solid border-2 border-opacity-50;
+    }
+
+    .justify {
+        @apply flex items-center justify-center;
     }
 }
