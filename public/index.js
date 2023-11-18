@@ -11,22 +11,27 @@ menuButton.addEventListener("click", function () {
 
 function enableDarkMode() {
   document.documentElement.classList.add("dark-mode");
+  document.querySelector("#lightModeButton").classList.remove("hidden");
+  document.querySelector("#darkModeButton").classList.add("hidden");
 }
 
 function disableDarkMode() {
   document.documentElement.classList.remove("dark-mode");
+  document.querySelector("#lightModeButton").classList.add("hidden");
+  document.querySelector("#darkModeButton").classList.remove("hidden");
 }
 
 const darkModeButton = document.getElementById("darkModeButton");
 darkModeButton.addEventListener("click", () => {
-  if (document.documentElement.classList.contains("dark-mode")) {
-    disableDarkMode();
-  } else {
     enableDarkMode();
-  }
 });
 
-// Function to add classes to an element when it reaches the center of the screen
+const lightModeButton = document.getElementById("lightModeButton");
+lightModeButton.addEventListener("click", () => {
+    disableDarkMode();
+});
+
+
 function addClassesWhenCentered(element, classesToAdd) {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -51,12 +56,13 @@ function addClassesWhenCentered(element, classesToAdd) {
           targetPosition.right >= windowPosition.left &&
           targetPosition.left <= windowPosition.right
         ) {
-          element.classList.add(...classesToAdd); element.classList.remove("invisible");
+          element.classList.add(...classesToAdd);
+          element.classList.remove("invisible");
           setTimeout(() => {
-           element.classList.remove(...classesToAdd);
-            
+            element.classList.remove(...classesToAdd);
+
             console.log("Element is centered");
-          }, 4000);
+          }, 2000);
           observer.disconnect();
         }
       }

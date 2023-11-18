@@ -83,8 +83,13 @@
 
 
                     <button class="opacity-60 dark-mode-button" id="darkModeButton"> <img src="./images/232750.png"
-                            class="sm:h-9 h-11 rounded-full transition hover:bg-gray-100 duration-300 animate-fd animate-delay-[600ms]"
+                            class="md:h-9 h-11 rounded-full transition hover:bg-gray-100 duration-300 animate-fd animate-delay-[600ms]"
                             alt="Dark mode button">
+                    </button>
+                    <button class=" dark-mode-button hidden" id="lightModeButton"> <img
+                            src="./images/icons8-sun.svg"
+                            class="md:h-9 h-11 p-2 rounded-full transition hover:bg-gray-900 duration-300 animate-fd animate-delay-[600ms]"
+                            alt="Light mode button">
                     </button>
 
                 </div>
@@ -97,7 +102,7 @@
 
     <main id="landing" class="sm:mt-16 mt-4 px-7 ">
 
-        
+
         <div class="text-center">
 
             <h1 class="font-extrabold text-5xl sm:text-7xl px-12 animate-fu ">
@@ -122,7 +127,7 @@
             <div
                 class="inline-block sm:justify pt-8 w-full transition duration-450 animate-fu animate-delay-[900ms] sm:space-y-0 sm:space-x-4 space-y-4">
 
-                <a href="#article" 
+                <a href="#card1" style="scroll-behavior: smooth !important;"
                     class="aTag justify px-10 text-xl text-green-400 bg-opacity-10 bg-green-400 rounded-md font-semibold transition hover:text-white hover:bg-green-400 duration-300 animate-fu animate-delay-[900ms] h-16 w-full btn-border sm:w-72 ">
                     View properties
                 </a>
@@ -131,11 +136,12 @@
                     Explore locations
                 </a>
             </div>
-        </div><hr class="mt-32 mx-auto w-8/12 mb-8 animate-fu animate-delay-[1200ms]">
+        </div>
+        <hr class="mt-32 mx-auto w-8/12 mb-8 animate-fu animate-delay-[1200ms]">
     </main>
 
     <section>
-        
+
         <div class="pt-8 justify">
             <h2 class="text-4xl font-semibold text-gray-600 animate-fu animate-delay-[1500ms]">Recent properties</h2>
         </div>
@@ -145,7 +151,7 @@
 
 
                 <div id="card1"
-                    class="rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1600ms] animate-duration-[2500ms]">
+                    class=" card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1600ms] animate-duration-[2500ms] ">
                     <img class="w-full" src="images/home1.jpg" alt="Orchid villa photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">Orchid Villa</div>
@@ -180,7 +186,7 @@
 
 
                 <div id="card2"
-                    class="rounded-xl shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1800ms] animate-duration-[2000ms]">
+                    class="card rounded-xl shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1800ms] animate-duration-[2000ms] ">
                     <img class="w-full" src="images/home2.jpg" alt="577 Garcia photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">577 Garcia</div>
@@ -212,7 +218,7 @@
 
 
                 <div id="card3"
-                    class="rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[2000ms] animate-duration-[2000ms]">
+                    class=" card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[2000ms] animate-duration-[2000ms]  ">
                     <img class="w-full" src="images/home3.jpg" alt="Nexa Epitome photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">Nexa Epitome</div>

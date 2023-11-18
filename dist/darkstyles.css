@@ -3,3 +3,39 @@
     color: #fff !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.dark-mode .card {
+    background-color: #0d2941;
+    color: #fff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .card p {
+    color: #bbbbbb !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode nav a {
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode nav span {
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode img {
+    opacity: 100% !important;
+}
+
+.dark-mode div h2 {
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.dark-mode main div p {
+    color: #c6c6c6 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
