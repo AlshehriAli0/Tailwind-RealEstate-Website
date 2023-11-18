@@ -13,17 +13,6 @@
         @apply animate-ease-out;
     }
 
-    .card-l {
-        @apply animate-duration-[2000ms];
-        @apply animate-fade-right;
-        @apply animate-ease-out;
-    }
-
-    .card-r {
-        @apply animate-duration-[1300ms];
-        @apply animate-fade-left;
-        @apply animate-ease-out;
-    }
 
 
     .animate-fu {

@@ -28,3 +28,42 @@
     scroll-behavior: smooth !important;
 }
 
+#landing {
+    position: relative;
+    height: 80vh;
+}
+
+#landing::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -90vw;
+    bottom: -50vh;
+   
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 100vh solid rgba(52, 211, 142, 0.144);
+ 
+    z-index: -1;
+    transform: scaleX(-1);
+    animation: slideIn 1.6s ease-out forwards;
+    
+}
+
+@media only screen and (max-width: 450px) {
+#landing {
+        position: relative;
+        height: 85vh;
+    }
+   
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+        bottom: 0;
+      
+    }
+}
+

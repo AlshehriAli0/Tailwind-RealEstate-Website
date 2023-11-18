@@ -32,7 +32,7 @@
                 <div id="Links" class="hidden sm:block space-x-4 text-xl animate-fd animate-delay-[250ms]">
                     <a href=""
                         class="aActive font-semibold transition hover:text-green-400 duration-300 animate-delay-[250ms] ">Home</a>
-                    <a href=""
+                    <a href="#btn1"
                         class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[400ms] animate-ease-out">Services</a>
                     <a href=""
                         class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[550ms] animate-ease-out">About</a>
@@ -123,7 +123,7 @@
             <div
                 class="inline-block sm:justify pt-8 w-full transition duration-450 animate-fu animate-delay-[900ms] sm:space-y-0 sm:space-x-4 space-y-4">
 
-                <a href="#card1" style="scroll-behavior: smooth !important;"
+                <a href="#btn1" style="scroll-behavior: smooth !important;"
                     class="aTag justify px-10 text-xl text-green-400 bg-opacity-10 bg-green-400 rounded-md font-semibold transition hover:text-white hover:bg-green-400 duration-300 animate-fu animate-delay-[900ms] h-16 w-full btn-border sm:w-72 ">
                     View properties
                 </a>
@@ -133,7 +133,7 @@
                 </a>
             </div>
         </div>
-        <hr class="mt-32 mx-auto w-8/12 mb-8 animate-fu animate-delay-[1200ms]">
+        <hr class="sm:mt-52 mt-24 mx-auto sm:w-8/12 w-3/4 mb-8 animate-fu animate-delay-[1200ms]">
     </main>
 
     <section>
@@ -143,11 +143,11 @@
         </div>
 
         <article id="article">
-            <div class="grid grid-cols-1 md:grid-cols-3 p-10 px-4 sm:px-10 gap-9 mt-8 pt-4 parallax-container">
+            <div id="cards" class="grid grid-cols-1 md:grid-cols-3 p-10 px-4 sm:px-10 gap-9 mt-8 pt-4 invisible animate-delay-[2000ms] animate-duration-[2000ms] ">
 
 
                 <div id="card1"
-                    class=" card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1600ms] animate-duration-[2500ms] ">
+                    class="card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700">
                     <img class="w-full" src="./public/images/home1.jpg" alt="Orchid villa photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">Orchid Villa</div>
@@ -174,7 +174,7 @@
 
                     <div class="px-7 py-4 pb-8">
                         <button
-                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700">View
+                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700" id="btn1">View
                             Property</button>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
 
 
                 <div id="card2"
-                    class="card rounded-xl shadow-lg overflow-hidden transition transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[1800ms] animate-duration-[2000ms] ">
+                    class="card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700">
                     <img class="w-full" src="./public/images/home2.jpg" alt="577 Garcia photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">577 Garcia</div>
@@ -214,7 +214,7 @@
 
 
                 <div id="card3"
-                    class=" card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700 invisible animate-delay-[2000ms] animate-duration-[2000ms]  ">
+                    class=" card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-700">
                     <img class="w-full" src="./public/images/home3.jpg" alt="Nexa Epitome photo">
                     <div class="px-7 py-4 h-52">
                         <div class="font-bold text-2xl mb-2">Nexa Epitome</div>

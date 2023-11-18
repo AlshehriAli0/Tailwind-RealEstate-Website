@@ -5,6 +5,8 @@ const metaTag = document.querySelector(
 );
 const menuButtonImage = document.querySelector("#menu-button img");
 const iconImage = document.querySelector("#leftIcon");
+const animateCard = document.querySelector("#cards");
+const classesToAdd = ["animate-fu"];
 
 
 
@@ -68,31 +70,21 @@ function addClassesWhenCentered(element, classesToAdd) {
           targetPosition.right >= windowPosition.left &&
           targetPosition.left <= windowPosition.right
         ) {
-          element.classList.add(...classesToAdd);
+          element.classList.add(...classesToAdd);;
           element.classList.remove("invisible");
           setTimeout(() => {
             element.classList.remove(...classesToAdd);
 
             console.log("Element is centered");
-          }, 2000);
+          }, 4000);
           observer.disconnect();
         }
       }
     });
   });
 
-  // Start observing the element
   observer.observe(element);
 }
 
-const targetElement1 = document.querySelector("#card1");
-const targetElement2 = document.querySelector("#card2");
-const targetElement3 = document.querySelector("#card3");
 
-const classesToAdd1 = ["animate-fu"];
-const classesToAdd2 = ["animate-fu"];
-const classesToAdd3 = ["animate-fu"];
-
-addClassesWhenCentered(targetElement1, classesToAdd1);
-addClassesWhenCentered(targetElement2, classesToAdd2);
-addClassesWhenCentered(targetElement3, classesToAdd3);
+addClassesWhenCentered(animateCard, classesToAdd);
