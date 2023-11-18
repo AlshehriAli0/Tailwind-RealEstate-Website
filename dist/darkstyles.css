@@ -39,3 +39,8 @@
     color: #c6c6c6 !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.dark-mode #dropdown-menu a{
+    color: #0d2941 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
