@@ -59,6 +59,14 @@
    
 }
 
+@media only screen and (min-width: 450px) and  (max-width: 900px) {
+    #landing {
+        position: relative;
+        height: 100vh;
+    }
+
+}
+
 @keyframes slideIn {
     to {
         left: 0;
