@@ -1,5 +1,8 @@
 var menuButton = document.getElementById("menu-button");
 var dropdownMenu = document.getElementById("dropdown-menu");
+var metaTag = document.querySelector(
+  'meta[name="apple-mobile-web-app-status-bar-style"]'
+);
 
 menuButton.addEventListener("click", function () {
   if (dropdownMenu.classList.contains("show")) {
@@ -23,14 +26,15 @@ function disableDarkMode() {
 
 const darkModeButton = document.getElementById("darkModeButton");
 darkModeButton.addEventListener("click", () => {
-    enableDarkMode();
+  enableDarkMode();
+  metaTag.setAttribute("content", "black-translucent");
 });
 
 const lightModeButton = document.getElementById("lightModeButton");
 lightModeButton.addEventListener("click", () => {
-    disableDarkMode();
+  disableDarkMode();
+  metaTag.setAttribute("content", "default");
 });
-
 
 function addClassesWhenCentered(element, classesToAdd) {
   const observer = new IntersectionObserver((entries, observer) => {
