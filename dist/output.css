@@ -623,8 +623,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .ml-8 {
@@ -639,8 +639,8 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .mt-4 {
@@ -655,24 +655,8 @@ video {
   margin-top: 2rem;
 }
 
-.mt-64 {
-  margin-top: 16rem;
-}
-
-.mt-52 {
-  margin-top: 13rem;
-}
-
-.mt-56 {
-  margin-top: 14rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -731,16 +715,8 @@ video {
   width: 14rem;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .origin-top-right {
@@ -952,6 +928,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-left {
@@ -1229,12 +1209,16 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .sm\:mt-16 {
     margin-top: 4rem;
   }
 
-  .sm\:mt-52 {
-    margin-top: 13rem;
+  .sm\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .sm\:block {
@@ -1296,10 +1280,6 @@ video {
 
   .md\:w-10 {
     width: 2.5rem;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:px-20 {
