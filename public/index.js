@@ -1,8 +1,12 @@
-var menuButton = document.getElementById("menu-button");
-var dropdownMenu = document.getElementById("dropdown-menu");
-var metaTag = document.querySelector(
+const menuButton = document.getElementById("menu-button");
+const dropdownMenu = document.getElementById("dropdown-menu");
+const metaTag = document.querySelector(
   'meta[name="apple-mobile-web-app-status-bar-style"]'
 );
+const menuButtonImage = document.querySelector("#menu-button img");
+const iconImage = document.querySelector("#leftIcon");
+
+
 
 menuButton.addEventListener("click", function () {
   if (dropdownMenu.classList.contains("show")) {
@@ -16,12 +20,16 @@ function enableDarkMode() {
   document.documentElement.classList.add("dark-mode");
   document.querySelector("#lightModeButton").classList.remove("hidden");
   document.querySelector("#darkModeButton").classList.add("hidden");
+  menuButtonImage.src = "./public/images/menu(white).png";
+  iconImage.src = "./public/images/buy-home(white).png";
 }
 
 function disableDarkMode() {
   document.documentElement.classList.remove("dark-mode");
   document.querySelector("#lightModeButton").classList.add("hidden");
   document.querySelector("#darkModeButton").classList.remove("hidden");
+  menuButtonImage.src = "./public/images/menu.png";
+  iconImage.src = "./public/images/buy-home.png";
 }
 
 const darkModeButton = document.getElementById("darkModeButton");

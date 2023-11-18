@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./dist/styles.css">
     <link rel="stylesheet" href="./dist/darkstyles.css">
-    <link rel="icon" href="./public/images/house.png" type="image/png">
+    <link rel="icon" href="./public/images/buy-home.png" type="image/png">
 </head>
 
 <header>
@@ -20,7 +20,7 @@
 
             <div id="Left-icon"
                 class="flex items-center space-x-2 animate-duration-[1300ms] animate-fade-down animate-delay-[250ms] animate-ease-out">
-                <img src="./public/images/house.png" alt="logo (House)" style="opacity: 60% !important;"
+                <img id="leftIcon" src="./public/images/buy-home.png" alt="logo (House)" style="opacity: 60% !important;"
                     class=" md:h-10 md:w-10 h-9 opacity-60 animate-fade-down animate-delay-[600ms] animate-ease-out">
                 <span
                     class="font-semibold text-gray-500 md:text-xl text-xl animate-fade-down  animate-delay-[250ms] animate-ease-out">Premium
@@ -40,7 +40,7 @@
                         class="text-gray-500 font-semibold transition hover:text-green-400 duration-300 animate-fade-down  animate-delay-[750ms] animate-ease-out">Contact
                         Us</a>
                 </div>
-                <div id="dropdown-menu-container" class="flex z-10 items-center sm:pl-1 ml-8">
+                <div id="dropdown-menu-container" class="flex z-10 items-center gap-1 pr-2 sm:pl-1 ml-8">
                     <div id="dropdown" class="sm:hidden relative animate-delay-[650ms] animate-fd">
                         <div class="text-left flex items-center pt-1">
                             <div class="relative inline-block text-left">
@@ -48,13 +48,8 @@
                                     <button type="button"
                                         class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 p"
                                         id="menu-button" aria-expanded="false" aria-haspopup="true">
-                                        <img src="" alt="">
-                                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
-                                            aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                                clip-rule="evenodd" />
-                                        </svg>
+                                        
+                                     <img class="h-4" src="./public/images/menu.png" alt="">
                                     </button>
                                 </div>
                             </div>

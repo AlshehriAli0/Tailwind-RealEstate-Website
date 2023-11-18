@@ -719,6 +719,14 @@ video {
   height: 2.25rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -785,6 +793,14 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-x-1 {
@@ -958,6 +974,22 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .text-left {

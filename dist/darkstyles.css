@@ -44,3 +44,8 @@
     color: #0d2941 !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.dark-mode #menu-button{
+    background-color: #081e30 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
