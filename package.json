@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^3.3.3",
     "tailwindcss-animated": "^1.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }
