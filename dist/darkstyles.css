@@ -1,11 +1,11 @@
 .dark-mode {
-    background-color: #081e30;
+    background-color: #071b2b;
     color: #fff !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark-mode .card {
-    background-color: #0d2941;
+    background-color: #0a1f31;
     color: #fff !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
