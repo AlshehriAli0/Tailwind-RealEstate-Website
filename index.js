@@ -100,7 +100,7 @@ if (width <= 1024) {
     slide.classList.add("bg-gray-100");
   });
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
-    slide.classList.add("bg-opacity-30");
+    slide.classList.add("bg-opacity-40");
   });
 } else {
   document.querySelector("#swiper").classList.remove("swiper");
