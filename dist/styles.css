@@ -56,6 +56,10 @@ section {
     height: 200vh;
 }
 
+hr {
+    border-top: 1.5px solid #9CA3AF;
+}
+
 section::before {
     content: "";
     position: absolute;
@@ -94,3 +98,29 @@ section::before {
 
     }
 }
+
+
+
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/public/images/luxury.jpg');
+}
+
+@keyframes bannerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.swiper {
+    width: 80vw;
+    height: 100%;
+}
+

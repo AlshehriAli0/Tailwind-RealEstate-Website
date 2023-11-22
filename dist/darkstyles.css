@@ -49,3 +49,31 @@
     background-color: #081e30 !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.dark-mode hr {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.dark-mode .swiper-slide{
+    background-color: #0a1f31;
+        color: #fff !important;
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode p{
+    color: rgb(189, 194, 200) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode h1 {
+    color: rgb(255, 255, 255) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .swiper-pagination {
+    color: #ffffff;
+}
+
+.dark-mode .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}

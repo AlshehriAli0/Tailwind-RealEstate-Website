@@ -13,6 +13,12 @@
         @apply animate-ease-out;
     }
 
+    .animate-fr {
+        @apply animate-duration-[1300ms];
+        @apply animate-fade-right;
+        @apply animate-ease-out;
+    }
+
 
 
     .animate-fu {

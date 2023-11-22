@@ -6,9 +6,10 @@ const metaTag = document.querySelector(
 const menuButtonImage = document.querySelector("#menu-button img");
 const iconImage = document.querySelector("#leftIcon");
 const animateCard = document.querySelector("#cards");
-const classesToAdd = ["animate-fu"];
-
-
+const banner = document.querySelector("#exploreLocations");
+const animateCardClass = ["animate-fu"];
+const bannerClass = ["animate-fr"];
+let width = window.innerWidth;
 
 menuButton.addEventListener("click", function () {
   if (dropdownMenu.classList.contains("show")) {
@@ -70,12 +71,12 @@ function addClassesWhenCentered(element, classesToAdd) {
           targetPosition.right >= windowPosition.left &&
           targetPosition.left <= windowPosition.right
         ) {
-          element.classList.add(...classesToAdd);;
+            console.log("Element is centered", element);
+          element.classList.add(...classesToAdd);
           element.classList.remove("invisible");
           setTimeout(() => {
             element.classList.remove(...classesToAdd);
 
-            console.log("Element is centered");
           }, 4000);
           observer.disconnect();
         }
@@ -86,5 +87,30 @@ function addClassesWhenCentered(element, classesToAdd) {
   observer.observe(element);
 }
 
+addClassesWhenCentered(banner, bannerClass);
+addClassesWhenCentered(animateCard, animateCardClass);
 
-addClassesWhenCentered(animateCard, classesToAdd);
+if (width <= 1024) {
+  document.querySelector("#swiper").classList.add("swiper");
+  document.querySelector("#swiper").classList.add("mySwiper");
+  document.querySelector("#wrapper").classList.add("swiper-wrapper");
+  document.querySelector("#wrapper").classList.remove("p-8");
+  document.querySelector("#wrapper").classList.remove("gap-5");
+  document.querySelector("#wrapper").classList.remove("px-16");
+  document.querySelectorAll(".swiper-slide").forEach((slide) => {
+    slide.classList.add("bg-gray-100");
+  });
+  document.querySelectorAll(".swiper-slide").forEach((slide) => {
+    slide.classList.add("bg-opacity-30");
+  });
+} else {
+  document.querySelector("#swiper").classList.remove("swiper");
+  document.querySelector("#swiper").classList.remove("mySwiper");
+  document.querySelector("#wrapper").classList.remove("swiper-wrapper");
+  document.querySelector("#wrapper").classList.add("p-8");
+  document.querySelector("#wrapper").classList.add("gap-5");
+  document.querySelector("#wrapper").classList.add("px-16");
+  document.querySelectorAll(".swiper-slide").forEach((slide) => {
+    slide.classList.add("shadow-xl");
+  });
+}

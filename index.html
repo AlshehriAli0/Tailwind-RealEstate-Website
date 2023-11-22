@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./dist/styles.css">
     <link rel="stylesheet" href="./dist/darkstyles.css">
     <link rel="icon" href="./public/images/buy-home.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <header>
@@ -20,7 +22,8 @@
 
             <div id="Left-icon"
                 class="flex items-center space-x-2 animate-duration-[1300ms] animate-fade-down animate-delay-[250ms] animate-ease-out">
-                <img id="leftIcon" src="./public/images/buy-home.png" alt="logo (House)" style="opacity: 60% !important;"
+                <img id="leftIcon" src="./public/images/buy-home.png" alt="logo (House)"
+                    style="opacity: 60% !important;"
                     class=" md:h-10 md:w-10 h-9 opacity-60 animate-fade-down animate-delay-[600ms] animate-ease-out">
                 <span
                     class="font-semibold text-gray-500 md:text-xl text-xl animate-fade-down  animate-delay-[250ms] animate-ease-out">Premium
@@ -48,8 +51,8 @@
                                     <button type="button"
                                         class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 p"
                                         id="menu-button" aria-expanded="false" aria-haspopup="true">
-                                        
-                                     <img class="h-4" src="./public/images/menu.png" alt="">
+
+                                        <img class="h-4" src="./public/images/menu.png" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -78,7 +81,8 @@
                     </div>
 
 
-                    <button class="opacity-60 dark-mode-button" id="darkModeButton"> <img src="./public/images/232750.png"
+                    <button class="opacity-60 dark-mode-button" id="darkModeButton"> <img
+                            src="./public/images/232750.png"
                             class="md:h-9 h-11 rounded-full transition hover:bg-gray-100 duration-300 animate-fd animate-delay-[600ms]"
                             alt="Dark mode button">
                     </button>
@@ -103,7 +107,7 @@
 
             <h1 class="font-extrabold text-5xl sm:text-7xl px-12 animate-fu ">
                 <span class="block">Premium Properties</span>
-                <span class="block text-green-400">Find your dream home</span>
+                <span class="block text-green-400">Find Your Dream home</span>
             </h1>
 
             <p class="mt-5 text-gray-500 px-5 md:text-xl md:px-20 animate-delay-[600ms] animate-fu">
@@ -123,27 +127,28 @@
             <div
                 class="inline-block sm:justify pt-12 w-full transition duration-450 animate-fu animate-delay-[900ms] sm:space-y-0 sm:space-x-4 space-y-4">
 
-                <a href="#btn1" style="scroll-behavior: smooth !important;"
-                    class="aTag justify px-10 text-xl text-green-400 bg-opacity-10 bg-green-400 rounded-md font-semibold transition hover:text-white hover:bg-green-400 duration-300 animate-fu animate-delay-[900ms] h-16 w-full btn-border sm:w-72 ">
+                <a href="#card2" style="scroll-behavior: smooth !important;"
+                    class="aTag tracking-wider justify px-10 text-xl text-green-400 bg-opacity-10 bg-green-400  font-semibold transition hover:text-white hover:bg-green-400 hover:bg-opacity-80 duration-300 animate-fu animate-delay-[900ms] h-16 w-full btn-border sm:w-72 ">
                     View properties
                 </a>
-                <a href="#"
-                    class="justify px-10 rounded-md text-xl font-semibold text-green-400 transition hover:bg-green-400 hover:text-white duration-300 animate-fu animate-delay-[900ms] btn-border h-16 w-full sm:w-72 aTag">
+                <a href="#exploreLocations"
+                    class="justify px-10 tracking-wider text-xl font-semibold text-green-400 transition hover:bg-green-400 hover:bg-opacity-80 hover:text-white duration-300 animate-fu animate-delay-[900ms] btn-border h-16 w-full sm:w-72 aTag">
                     Explore locations
                 </a>
             </div>
         </div>
-        <hr class=" mt-48 mx-auto sm:w-8/12 w-3/4 sm:mb-8 mb-24 animate-fu animate-delay-[1200ms] gray-800">
+        <hr class="color-white mt-48 mx-auto sm:w-8/12 w-3/4 sm:mb-8 mb-24 animate-fu animate-delay-[1200ms] gray-800">
     </main>
 
     <section>
 
         <div class="pt-32 justify">
-            <h2 class="text-4xl font-semibold text-gray-600 animate-fu animate-delay-[1500ms]">Recent properties</h2>
+            <h1 class="text-4xl font-semibold text-gray-700 animate-fu animate-delay-[1000ms]">Recent Properties</h1>
         </div>
 
         <article id="article">
-            <div id="cards" class="grid grid-cols-1 lg:grid-cols-3 p-10 px-4 sm:px-10 gap-9 mt-8 pt-10 invisible animate-delay-[2000ms] animate-duration-[2000ms] ">
+            <div id="cards"
+                class="grid grid-cols-1 lg:grid-cols-3 p-10 px-4 sm:px-10 gap-9 mt-8 pt-10 invisible animate-delay-[2000ms] animate-duration-[2000ms] ">
 
 
                 <div id="card1"
@@ -174,7 +179,8 @@
 
                     <div class="px-7 py-4 pb-8">
                         <button
-                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700" id="btn1">View
+                            class="inline-block bg-green-500 text-white font-bold rounded-full py-2 px-3 font-semibold transition-transform hover:scale-110 hover:shadow-2xl duration-700"
+                            id="btn1">View
                             Property</button>
                     </div>
                 </div>
@@ -246,12 +252,145 @@
                 </div>
             </div>
 
-
         </article>
 
+        <hr class=" mt-16 mx-auto sm:w-8/12 w-3/4">
+
+        <div id="bannerContainer" class="banner h-screen my-32 ">
+            <div id="exploreLocations" class="container mx-auto invisible pl-12 lg:pl-48 pt-64  animate-delay-[1400ms] ">
+                <h1 class="xl:text-5xl md:text-4xl text-2xl font-bold text-white mb-1">Experience Luxury Like Never
+                    Before</h1>
+                <h2 class="xl:text-3xl md:text-2xl text-xl  mb-8 text-gray-200">130+ Exotic locations across the globe.
+                </h2>
+                <button
+                    class="text-white shadow-lg border-2 px-8 py-4 font-bold transition hover:bg-white hover:bg-opacity-20 duration-300 tracking-wider">EXPLORE
+                    LOCATIONS</button>
+            </div>
+        </div>
+
+        <hr class="my-16 mx-auto sm:w-8/12 w-3/4">
+
+        <div class="mt-20 flex p-10 justify-center">
+            <h1 class="text-4xl text-center font-semibold text-gray-700">What Clients Have To Say About Us ?</h1>
+        </div>
+
+        <aside>
+
+            <div id="swiper" class=" ">
+                <div id="wrapper" class="lg:grid lg:grid-cols-3 ">
+
+
+                    <div class="swiper-slide rounded-xl p-4 mb-6 ">
+                        <span class="font-bold text-xl mt-1">Happy Homeowner</span>
+                        <p class="text-gray-600 mt-2 mb-8">
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                            I never thought finding my dream home could be so easy until I stumbled upon Premium
+                            Properties.
+                            The
+                            variety of listings
+                            and detailed information made the entire process seamless. The team's expertise and
+                            guidance
+                            were
+                            invaluable, ensuring I
+                            made an informed decision. I'm now a proud homeowner, and I owe it all to the
+                            user-friendly
+                            experience and professional
+                            service provided by Premium Properties.
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                        </p>
+                        <div class="flex bg-green-400 bg-opacity-25 rounded-full items-center">
+                            <a href="" class="block relative ml-1">
+                                <img class="h-10 w-10 rounded-full mx-auto bg-black bg-opacity-20" src="/public/images/avatar-portrait-svgrepo-com(1).svg" alt="">
+                            </a>
+                            <div class="flex flex-col ml-2 justify-between">
+                                <span class="text-lg text-green-500 font-semibold -mb-1.5">Jane D.</span>
+                                <span class="text-sm mb-0.5">Marketing Executive</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide  bg-white rounded-xl p-4 mb-6">
+                        <span class="font-bold text-xl mt-1">Relocating Made Simple</span>
+                        <p class="text-gray-600 mt-2 mb-8">
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                            Relocating can be a daunting task, but Premium Properties turned it into a breeze. The
+                            website's
+                            intuitive design
+                            allowed me to explore properties in my desired location effortlessly. The detailed
+                            descriptions
+                            and
+                            high-quality images
+                            gave me a clear picture of each home. Thanks to Premium Properties, I found the perfect
+                            place to
+                            call home in a new
+                            city. Highly recommended for anyone looking for a smooth relocation experience.
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                        </p>
+                        <div class="flex bg-green-400 bg-opacity-25 rounded-full items-center">
+                            <a href="" class="block relative ml-1">
+                                <img class="h-10 w-10 rounded-full mx-auto bg-black bg-opacity-20" src="/public/images/avatar-svgrepo-com.svg" alt="">
+                            </a>
+                            <div class="flex flex-col ml-2 justify-between">
+                                <span class="text-lg text-green-500 font-semibold -mb-1.5">David R.</span>
+                                <span class="text-sm mb-0.5">IT Consultant</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white rounded-xl p-4 mb-6">
+                        <span class="font-bold text-xl mt-1">Exceptional Service</span>
+                        <p class="text-gray-600 mt-2 mb-14">
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                            Premium Properties exceeded my expectations in every aspect. From the user-friendly
+                            interface to
+                            the
+                            expert advice on
+                            property selection, the entire experience was top-notch. The team was responsive, accommodating, and
+                            genuinely
+                            invested
+                            in helping me find a
+                            home that suited my needs. If you're in search of quality service and a dream home, look
+                            no
+                            further
+                            than Premium
+                            Properties.
+                            <span class="text-green-500 text-lg font-bold">"</span>
+                        </p>
+                        <div class="flex bg-green-400 bg-opacity-25 rounded-full items-center">
+                            <a href="" class="block relative ml-1">
+                                <img class="h-10 w-10 rounded-full mx-auto bg-black bg-opacity-20" src="/public/images/avatar-portrait-svgrepo-com.svg" alt="">
+                            </a>
+                            <div class="flex flex-col ml-2 justify-between">
+                                <span class="text-lg text-green-500 font-semibold -mb-1.5">Amanda S.</span>
+                                <span class="text-sm mb-0.5">Human Resources Manager</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </aside>
     </section>
 
+
+
+
 </body>
-<script src="./public/index.js"></script>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+</script>
 
 </html>
