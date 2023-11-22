@@ -71,7 +71,6 @@ function addClassesWhenCentered(element, classesToAdd) {
           targetPosition.right >= windowPosition.left &&
           targetPosition.left <= windowPosition.right
         ) {
-            console.log("Element is centered", element);
           element.classList.add(...classesToAdd);
           element.classList.remove("invisible");
           setTimeout(() => {
