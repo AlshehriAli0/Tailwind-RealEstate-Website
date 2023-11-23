@@ -21,6 +21,7 @@ menuButton.addEventListener("click", function () {
 
 function enableDarkMode() {
   document.documentElement.classList.add("dark-mode");
+  document.documentElement.classList.remove("disable-animations");
   document.querySelector("#lightModeButton").classList.remove("hidden");
   document.querySelector("#darkModeButton").classList.add("hidden");
   menuButtonImage.src = "./public/images/menu(white).png";
@@ -29,6 +30,7 @@ function enableDarkMode() {
 
 function disableDarkMode() {
   document.documentElement.classList.remove("dark-mode");
+  document.documentElement.classList.add("disable-animations"); // Add
   document.querySelector("#lightModeButton").classList.add("hidden");
   document.querySelector("#darkModeButton").classList.remove("hidden");
   menuButtonImage.src = "./public/images/menu.png";
@@ -113,3 +115,20 @@ if (width <= 1024) {
     slide.classList.add("shadow-xl");
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  let cardsContainer = document.querySelector(".cards-container");
+  let overlay = document.querySelector("#overlay");
+  let isExpanded = false;
+
+  cardsContainer.addEventListener("click", function () {
+    if (isExpanded) {
+      cardsContainer.classList.remove("expanded");
+      overlay.classList.remove("invisible");
+    } else {
+      cardsContainer.classList.add("expanded");
+      overlay.classList.add("invisible");
+    }
+
+    isExpanded = !isExpanded;
+  });
+});
