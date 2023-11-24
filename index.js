@@ -30,7 +30,7 @@ function enableDarkMode() {
 
 function disableDarkMode() {
   document.documentElement.classList.remove("dark-mode");
-  document.documentElement.classList.add("disable-animations"); // Add
+  document.documentElement.classList.add("disable-animations");
   document.querySelector("#lightModeButton").classList.add("hidden");
   document.querySelector("#darkModeButton").classList.remove("hidden");
   menuButtonImage.src = "./public/images/menu.png";
@@ -98,6 +98,7 @@ if (width <= 1024) {
   document.querySelector("#wrapper").classList.remove("p-8");
   document.querySelector("#wrapper").classList.remove("gap-5");
   document.querySelector("#wrapper").classList.remove("px-16");
+  document.querySelector("#overlay").classList.remove("hidden");
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
     slide.classList.add("bg-gray-100");
   });
@@ -111,10 +112,13 @@ if (width <= 1024) {
   document.querySelector("#wrapper").classList.add("p-8");
   document.querySelector("#wrapper").classList.add("gap-5");
   document.querySelector("#wrapper").classList.add("px-16");
+  document.querySelector("#overlay").classList.add("hidden");
+
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
     slide.classList.add("shadow-xl");
   });
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   let cardsContainer = document.querySelector(".cards-container");
   let overlay = document.querySelector("#overlay");
