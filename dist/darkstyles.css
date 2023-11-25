@@ -1,5 +1,5 @@
 .dark-mode {
-    background-color: #071b2b;
+    background-color: #071726;
     color: #fff ;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -77,3 +77,18 @@
 .dark-mode .swiper-pagination-bullet-active {
     background-color: #ffffff;
 }
+
+.dark-mode label {
+    color: #ffffff;
+}
+
+.dark-mode input {
+    background-color: #071726;
+    border-color: #737373;
+}
+
+.dark-mode textarea {
+    background-color: #071726;
+    border-color: #737373;
+}
+

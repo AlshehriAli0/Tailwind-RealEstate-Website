@@ -4,6 +4,7 @@
 
 }
 
+
 #dropdown-menu {
     display: none;
     position: absolute;
@@ -25,6 +26,19 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
 }
 
 #landing {
@@ -120,18 +134,19 @@ section::before {
     width: 87vw;
     height: 100%;
 }
-@media screen and (max-width: 900px) {
-.cards-container {
-    position: relative;
-    overflow: hidden;
-    max-height: 600px;
-    transition: max-height 1.0s ease-out;
-}
 
-.cards-container.expanded {
-    max-height: none;
-    transition: max-height 1.0s ease-out;
-}
+@media screen and (max-width: 900px) {
+    .cards-container {
+        position: relative;
+        overflow: hidden;
+        max-height: 600px;
+        transition: max-height 1.0s ease-out;
+    }
+
+    .cards-container.expanded {
+        max-height: none;
+        transition: max-height 1.0s ease-out;
+    }
 
 
 
@@ -158,4 +173,8 @@ section::before {
     .cards-container .card {
         transform: translateY(-214%);
     }
+}
+
+#contactForm {
+    background-color: rgba(52, 211, 142, 0.144)
 }
