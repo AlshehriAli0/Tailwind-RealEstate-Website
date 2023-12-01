@@ -28,7 +28,6 @@ function enableDarkMode() {
   menuButtonImage.src = "./public/images/menu(white).png";
   iconImage.src = "./public/images/buy-home(white).png";
   footerImage.src = "./public/images/buy-home(white).png";
-
 }
 
 function disableDarkMode() {
@@ -39,7 +38,6 @@ function disableDarkMode() {
   menuButtonImage.src = "./public/images/menu.png";
   iconImage.src = "./public/images/buy-home.png";
   footerImage.src = "./public/images/buy-home.png";
-
 }
 
 const darkModeButton = document.getElementById("darkModeButton");
@@ -82,7 +80,6 @@ function addClassesWhenCentered(element, classesToAdd) {
           element.classList.remove("invisible");
           setTimeout(() => {
             element.classList.remove(...classesToAdd);
-
           }, 4000);
           observer.disconnect();
         }
@@ -95,7 +92,7 @@ function addClassesWhenCentered(element, classesToAdd) {
 
 addClassesWhenCentered(banner, bannerClass);
 addClassesWhenCentered(animateCard, animateCardClass);
-document.addEventListener("DOMContentLoaded", function () {
+
 if (width <= 1024) {
   document.querySelector("#swiper").classList.add("swiper");
   document.querySelector("#swiper").classList.add("mySwiper");
@@ -120,15 +117,13 @@ if (width <= 1024) {
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
     slide.classList.add("shadow-xl");
   });
-}});
+}
 
 function scrollToTop() {
   window.scroll(0, 0);
 }
 
 document.addEventListener("DOMContentLoaded", scrollToTop);
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let cardsContainer = document.querySelector(".cards-container");
