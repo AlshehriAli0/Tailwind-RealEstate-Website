@@ -95,7 +95,7 @@ function addClassesWhenCentered(element, classesToAdd) {
 
 addClassesWhenCentered(banner, bannerClass);
 addClassesWhenCentered(animateCard, animateCardClass);
-
+document.addEventListener("DOMContentLoaded", function () {
 if (width <= 1024) {
   document.querySelector("#swiper").classList.add("swiper");
   document.querySelector("#swiper").classList.add("mySwiper");
@@ -120,7 +120,15 @@ if (width <= 1024) {
   document.querySelectorAll(".swiper-slide").forEach((slide) => {
     slide.classList.add("shadow-xl");
   });
+}});
+
+function scrollToTop() {
+  window.scroll(0, 0);
 }
+
+document.addEventListener("DOMContentLoaded", scrollToTop);
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let cardsContainer = document.querySelector(".cards-container");
