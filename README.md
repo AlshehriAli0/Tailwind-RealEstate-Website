@@ -18,4 +18,4 @@ Explore the luxurious properties and start your house hunting journey! 🏡
 
 ## Live Demo
 
-Check out the live demo [here](https://alshehriali0.github.io/Tailwind-RealEstate-Website/).
+Check out the live demo [here](https://alshehriali0.github.io/Tailwind-RealEstate-Website/#landing).
