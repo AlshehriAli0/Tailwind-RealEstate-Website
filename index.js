@@ -5,6 +5,7 @@ const metaTag = document.querySelector(
 );
 const menuButtonImage = document.querySelector("#menu-button img");
 const iconImage = document.querySelector("#leftIcon");
+const footerImage = document.querySelector("#footerImage");
 const animateCard = document.querySelector("#cards");
 const banner = document.querySelector("#exploreLocations");
 const animateCardClass = ["animate-fu"];
@@ -26,6 +27,8 @@ function enableDarkMode() {
   document.querySelector("#darkModeButton").classList.add("hidden");
   menuButtonImage.src = "./public/images/menu(white).png";
   iconImage.src = "./public/images/buy-home(white).png";
+  footerImage.src = "./public/images/buy-home(white).png";
+
 }
 
 function disableDarkMode() {
@@ -35,6 +38,8 @@ function disableDarkMode() {
   document.querySelector("#darkModeButton").classList.remove("hidden");
   menuButtonImage.src = "./public/images/menu.png";
   iconImage.src = "./public/images/buy-home.png";
+  footerImage.src = "./public/images/buy-home.png";
+
 }
 
 const darkModeButton = document.getElementById("darkModeButton");
